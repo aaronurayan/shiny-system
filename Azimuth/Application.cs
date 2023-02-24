@@ -11,7 +11,7 @@ namespace Azimuth
 
 		public static void Run(int _width, int _height, string _title, Color _color, Game _game)
 		{
-			Application app = new Application(_width, _height, _title, _color, _game);
+			Instance = new Application(_width, _height, _title, _color, _game);
 			Instance.Run();
 		}
 		public Window Window { get; }
